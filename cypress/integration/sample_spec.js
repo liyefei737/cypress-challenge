@@ -4,7 +4,6 @@ describe('Enter a number to get the median of primes:',()=>{
         cy.visit('http://localhost:3000')
     })
     
-    
     it('Functional acceptance testing - positive testings', () => {
         // 10 will return [3,5] - 2 multiple primes
         cy.get('input').type('10')
