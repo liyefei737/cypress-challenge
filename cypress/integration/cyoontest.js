@@ -18,7 +18,7 @@ describe('Enter a number to get the median of primes:',() => {
             
     })
 
-    it('Functional acceptance testing - negative testings', () => {
+    it('Functional acceptance testing - Negative testings', () => {
         cy.compareResult("-1","[,]")
 
     })
@@ -33,5 +33,6 @@ describe('Enter a number to get the median of primes:',() => {
     it('testing null value submit', () => {
         cy.contains('Submit').click()
         cy.get('button').should('be.disabled')
-    })//this should be an error because it crashs the app. It needs to implement the user entry condition statements
+        //this should be an error because it crashs the app. It needs to implement the user entry condition statements
+    })
 })
