@@ -1,4 +1,7 @@
 describe('Enter a number to get the median of primes:',() => {
+    // init after the validation 
+    // pull the unit test results into JSON and validates
+    // give id on the results so that command can be reusuable 
     it('My first test sample for TochBistro by Chris Yoon',() => {
         cy.visit('/')
     })
@@ -23,6 +26,6 @@ describe('Enter a number to get the median of primes:',() => {
 
     it('testing null value submit', () => {
         cy.contains('Submit').click()
-        cy.get('button').should('be.enable')
+        cy.get('button').should('be.disabled')
     })//this should be an error because it crashs the app. It needs to implement the user entry condition statements
 })
