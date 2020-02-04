@@ -23,3 +23,9 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+Cypress.Commands.add("compareResult", (number,result) => { 
+    cy.get('input').type(number)
+    cy.contains('Submit').click()
+    cy.get('h2').should('contain', result)
+})
