@@ -1,13 +1,10 @@
 describe('Enter a number to get the median of primes:',() => {
-    // init after the validation 
-    // pull the unit test results into JSON and validates
-    // give id on the results so that command can be reusuable 
-    it('My first test sample for TochBistro by Chris Yoon',() => {
+    it('My first test sample for Stock x by Chris Yoon',() => {
         cy.visit('/')
     })
     
     it('Functional acceptance testing - Positive testings', () => {
-        cy.compareResult("10","[3,5]")
+  
         cy.compareResult("18","[7]")
         cy.compareResult("0","[,]")
         cy.compareResult("1","[,]")
@@ -20,7 +17,6 @@ describe('Enter a number to get the median of primes:',() => {
 
     it('Functional acceptance testing - Negative testings', () => {
         cy.compareResult("-1","[,]")
-
     })
       
     it('Find out error handling issue - sending string should disable the button', () => { 

@@ -1,7 +1,7 @@
 Cypress.Commands.add("compareResult", (number,result) => { 
     cy.get('input').type(number)
     cy.contains('Submit').click()
-    cy.get('h2').should('contain', result)
+    cy.get('h2').should('contain', result) 
 })
 
 Cypress.Commands.add("sendStringResult", (string_) => { 
